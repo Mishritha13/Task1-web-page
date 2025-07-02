@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My First Webpage</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f4f8;
+      color: #333;
+      padding: 20px;
+    }
+
+    h1 {
+      color: #0066cc;
+    }
+
+    img {
+      border: 2px solid #000;
+      border-radius: 8px;
+    }
+
+    a {
+      color: #008000;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    table {
+      margin-top: 10px;
+      border-collapse: collapse;
+    }
+
+    th, td {
+      padding: 8px 12px;
+      border: 1px solid #000;
+    }
+
+    button {
+      margin-top: 20px;
+      padding: 10px 15px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Welcome to My Webpage</h1>
+  <p>Hello! I'm learning web development.</p>
+
+  <h2>My Favorite Image</h2>
+  <img src="https://tse3.mm.bing.net/th/id/OIP.uHaqRdiMzWSMCR2LzsmhtQHaEZ?pid=Api&P=0&h=180" alt="Sample Image" width="300">
+
+  <h2>Useful Links</h2>
+  <ul>
+    <li><a href="https://www.google.com" target="_blank">Visit Google</a></li>
+    <li><a href="#about">Go to About Section</a></li>
+  </ul>
+
+  <h2>My Hobbies</h2>
+  <ul>
+    <li>Coding</li>
+    <li>Reading</li>
+    <li>Gaming</li>
+  </ul>
+
+  <h2>Score Table</h2>
+  <table>
+    <tr>
+      <th>Name</th>
+      <th>Score</th>
+    </tr>
+    <tr>
+      <td>Mishritha</td>
+      <td>95</td>
+    </tr>
+    <tr>
+      <td>John</td>
+      <td>88</td>
+    </tr>
+  </table>
+
+  <h2 id="about">About Me</h2>
+  <p>I am a passionate learner and aspiring web developer.</p>
+
+  <button onclick="showMessage()">Click Me!</button>
+  <p id="message"></p>
+
+  <script>
+    function showMessage() {
+      alert("Thanks for clicking the button!");
+      document.getElementById("message").innerText = "You clicked the button!";
+    }
+  </script>
+
+</body>
+</html>
